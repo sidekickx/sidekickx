@@ -1,0 +1,5 @@
+#!/bin/bash
+    cd /home/emma/bash-grund/
+    /usr/bin/git add -A
+    /usr/bin/git commit -m "$1"
+    /usr/bin/git push 
