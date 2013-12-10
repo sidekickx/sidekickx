@@ -5,7 +5,7 @@ read -p "skriv ett tal till " y
 
 if [ $x -eq $y ]; then
     echo "$x är lika med $y"
-else [ $x -ne $y ]; 
+else 
     echo "$x är inte lika med $y"
 fi
 if [ $x -lt $y ]; then 
@@ -15,4 +15,5 @@ elif [ $x -gt $y ]; then
 else
     echo ""
 fi
+exit 0
 
