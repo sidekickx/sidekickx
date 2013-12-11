@@ -11,5 +11,5 @@ let mult="$Tal1*$Tal2"
 printf "$Tal1 * $Tal2 = $mult\n" 
 let div="$Tal1/$Tal2"
 let rest="$Tal1%$Tal2"
-printf "$Tal1 / $Tal2 = $div,$rest\n"
+printf "$Tal1 / $Tal2 = $div rest = $rest\n"
 
