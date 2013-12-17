@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Now=$(date +"%m-%d-%Y-%H.%M")
+Now=$(date +"%Y-%m-%d-%H.%M")
 Zip=" tar -czpf $HOME/katalog/$Now.tar.gz "
 To="$HOME"
 
