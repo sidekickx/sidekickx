@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# to run this you need to have the backup directory in /tmp
-
 Now=$(date +"%Y-%m-%d-%H.%M")
-Zip=" tar -czpf /tmp/backup/$Now.tar.gz "
-declare Arg
+Zip="tar -czpf /tmp/backup/$Now.tar.gz "
+if [ ! -e /tmp/backup ]; then
+    mkdir /tmp/backup
+fi
 
 if [ $EUID -eq 0 ]; then
     scp master@172.24.10.3:/etc/bind/named.conf.local /tmp/
@@ -16,5 +16,7 @@ if [ $EUID -eq 0 ]; then
             echo "file succesfully backuped"
         fi
     fi
+else 
+    echo "you are not miss.root"
 fi
 exit 0
