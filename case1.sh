@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Debdir="$HOME/deb/"
+Debdir="/home/emma/deb/"
 if [ $EUID = 0 ]; then
 dialog --msgbox "you will need to have a directory in \
     you home folder called deb" 10 60
